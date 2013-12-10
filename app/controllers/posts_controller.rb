@@ -6,6 +6,7 @@ class PostsController < ApplicationController
 	end
 
 	def create
+		//Create new post
 		@post = Post.new(params[:post])
 
 		if @post.save
